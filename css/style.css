@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Museo Cyrl 500';
+  src: url("../font/MuseoCyrl-500.woff") format("woff"), url("../font/MuseoCyrl-500.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Cyrl 700';
+  src: url("../font/MuseoCyrl-700.woff") format("woff"), url("../font/MuseoCyrl-700.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 500';
+  src: url("../font/MuseoSansCyrl-500.woff") format("woff"), url("../font/MuseoSansCyrl-500.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -322,17 +343,25 @@ template {
           box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #000000; }
+
+body {
+  font-family: 'Museo Cyrl 500';
+  background: rgba(255, 255, 255, 0.9) url("../img/bg.jpg") no-repeat; }
 
 .header {
-  border: 1px solid red; }
+  border: 0px solid red;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.132586);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.132586); }
   .header__menu {
-    border: 1px solid #000000; }
+    border: 0px solid #000000; }
   .header__left {
-    border: 1px solid #000000; }
+    border: 0px solid #000000; }
 
 .container__header {
-  border: 1px solid #000000; }
+  border: 0px solid #000000; }
 
 .logo {
   width: 139px;
@@ -364,6 +393,8 @@ html {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .header-left__img {
+    margin-right: 20px; }
 
 .container__header {
   display: -webkit-box;
@@ -378,3 +409,14 @@ html {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.menu__img {
+  margin-right: 3px; }
+
+.menu__link {
+  line-height: 19px;
+  margin-right: 5px;
+  text-decoration: none; }
+
+.menu__arrow {
+  margin-right: 30px; }

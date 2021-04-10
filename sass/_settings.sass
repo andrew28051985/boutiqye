@@ -1,16 +1,22 @@
 *, *:after, *:before
   box-sizing: border-box
-html
+html  
   font-size: 16px 
+  color: $dark
+body
+  font-family: 'Museo Cyrl 500'
+  background: $light url("../img/bg.jpg") no-repeat     
 .header
-  border: 1px solid red 
+  border: 0px solid red 
+  background: $light
+  box-shadow: 0px 5px 5px $shadow
   &__menu
-    border: 1px solid $dark
+    border: 0px solid $dark
   &__left
-    border: 1px solid $dark  
+    border: 0px solid $dark  
 .container
   &__header
-    border: 1px solid $dark
+    border: 0px solid $dark
 .logo
   width: 139px
   height: 51px
