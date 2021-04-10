@@ -385,6 +385,25 @@ template {
     max-width: 1045px;
     width: 90%; }
 
+.main-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -558,4 +577,20 @@ body {
   line-height: 84px;
   text-align: center;
   margin: 0;
+  margin-bottom: 15px;
   color: #ffffff; }
+
+.title__feedback-link {
+  font-family: 'Museo Cyrl 700';
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: 208px;
+  height: 50px;
+  background-color: #F08B98;
+  border-radius: 100px;
+  padding: 15px 27px; }
